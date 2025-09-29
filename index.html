@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Kumar Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Nitesh Kumar Store</div>
+        <input type="text" id="search" placeholder="Search for products...">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch">
+            <h3>Classic Watch</h3>
+            <p>Elegant analog watch</p>
+            <span class="price">₹1499</span>
+            <button onclick="addToCart('Classic Watch', 1499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155223f2e0" alt="Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <p>Clear sound, long battery</p>
+            <span class="price">₹999</span>
+            <button onclick="addToCart('Wireless Earbuds', 999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1621315271778-daf98e5f9c5c" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>Durable, 20L capacity</p>
+            <span class="price">₹1199</span>
+            <button onclick="addToCart('Backpack', 1199)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1606813908425-226dea0be3d0" alt="Sneakers">
+            <h3>Sneakers</h3>
+            <p>Comfortable & stylish</p>
+            <span class="price">₹2299</span>
+            <button onclick="addToCart('Sneakers', 2299)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1585386959984-0dffcd25b379" alt="Sunglasses">
+            <h3>Sunglasses</h3>
+            <p>UV protection, trendy</p>
+            <span class="price">₹799</span>
+            <button onclick="addToCart('Sunglasses', 799)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>Latest model, great camera</p>
+            <span class="price">₹15999</span>
+            <button onclick="addToCart('Smartphone', 15999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>Powerful performance</p>
+            <span class="price">₹45999</span>
+            <button onclick="addToCart('Laptop', 45999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1580894908361-9671950333c6" alt="Headphones">
+            <h3>Over-Ear Headphones</h3>
+            <p>Noise-cancelling</p>
+            <span class="price">₹2999</span>
+            <button onclick="addToCart('Over-Ear Headphones', 2999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1585386959984-422e84fbfb0d" alt="Fitness Band">
+            <h3>Fitness Band</h3>
+            <p>Track your health</p>
+            <span class="price">₹1999</span>
+            <button onclick="addToCart('Fitness Band', 1999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1616440054165-4ed0713b8152" alt="Tablet">
+            <h3>Tablet</h3>
+            <p>Portable and powerful</p>
+            <span class="price">₹12999</span>
+            <button onclick="addToCart('Tablet', 12999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1519183071298-a2962ae0b2c1" alt="Camera">
+            <h3>Digital Camera</h3>
+            <p>High resolution</p>
+            <span class="price">₹24999</span>
+            <button onclick="addToCart('Digital Camera', 24999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587202372775-df03e1bc4663" alt="Gaming Console">
+            <h3>Gaming Console</h3>
+            <p>Next-gen gaming</p>
+            <span class="price">₹39999</span>
+            <button onclick="addToCart('Gaming Console', 39999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1516893842951-9b3f6aef13c5" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p>Stay connected</p>
+            <span class="price">₹4999</span>
+            <button onclick="addToCart('Smartwatch', 4999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p>Portable sound</p>
+            <span class="price">₹1499</span>
+            <button onclick="addToCart('Bluetooth Speaker', 1499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1606813908425-0c2761c3b2d3" alt="E-reader">
+            <h3>E-reader</h3>
+            <p>Read on the go</p>
+            <span class="price">₹8999</span>
+            <button onclick="addToCart('E-reader', 8999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f" alt="Portable Charger">
+            <h3>Portable Charger</h3>
+            <p>Fast charging</p>
+            <span class="price">₹799</span>
+            <button onclick="addToCart('Portable Charger', 799)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Action Camera">
+            <h3>Action Camera</h3>
+            <p>Capture adventures</p>
+            <span class="price">₹19999</span>
+            <button onclick="addToCart('Action Camera', 19999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1621259182978-9c013e6d4d1a" alt="VR Headset">
+            <h3>VR Headset</h3>
+            <p>Immersive experience</p>
+            <span class="price">₹29999</span>
+            <button onclick="addToCart('VR Headset', 29999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1611078489931-5a33f61bdead" alt="Smart Home Hub">
+            <h3>Smart Home Hub</h3>
+            <p>Control your smart devices</p>
+            <span class="price">₹5999</span>
+            <button onclick="addToCart('Smart Home Hub', 5999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1627483269927-27c7c9c3b3b3" alt="Electric Kettle">
+            <h3>Electric Kettle</h3>
+            <p>Boil water quickly</p>
+            <span class="price">₹1299</span>
+            <button onclick="addToCart('Electric Kettle', 1299)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1611838475727-4d6f90e1a5cd" alt="Air Purifier">
+            <h3>Air Purifier</h3>
+            <p>Clean indoor air</p>
+            <span class="price">₹8999</span>
+            <button onclick="addToCart('Air Purifier', 8999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1586363104866-05a9ef7e8e3a" alt="Coffee Maker">
+            <h3>Coffee Maker</h3>
+            <p>Brew perfect coffee</p>
+            <span class="price">₹3499</span>
+            <button onclick="addToCart('Coffee Maker', 3499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1602810318496-1a7d4e21e6e3" alt="Hair Dryer">
+            <h3>Hair Dryer</h3>
+            <p>Fast drying, less damage</p>
+            <span class="price">₹1999</span>
+            <button onclick="addToCart('Hair Dryer', 1999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1606813908425-6b06f25a5c1a" alt="Electric Toothbrush">
+            <h3>Electric Toothbrush</h3>
+            <p>Better oral care</p>
+            <span class="price">₹2499</span>
+            <button onclick="addToCart('Electric Toothbrush', 2499)">Add to Cart</button>
+        </div>
+    </section>
+    <!-- Cart Sidebar -->
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: ₹0</p>
+        <button onclick="clearCart()">Clear Cart</button>
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Nitesh Kumar | Built like Meesho with HTML, CSS & JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
